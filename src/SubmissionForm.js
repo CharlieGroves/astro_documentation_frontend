@@ -6,6 +6,21 @@ export default function SubmissionForm() {
 	return (
 		<div className="form-container">
 			<Form>
+				<Form.Group className="mb-3" controlId="title">
+					<Form.Label>Title</Form.Label>
+					<Form.Control type="text" placeholder="Enter title" />
+				</Form.Group>
+				<Form.Group
+					className="mb-3"
+					controlId="description"
+				>
+					<Form.Label>Description</Form.Label>
+					<Form.Control as="textarea" />
+				</Form.Group>
+				<Form.Group className="mb-3" controlId="lights">
+					<Form.Label># Lights</Form.Label>
+					<Form.Control type="text" placeholder="Enter # lights" />
+				</Form.Group>
 				<Form.Group className="mb-3" controlId="lights">
 					<Form.Label># Lights</Form.Label>
 					<Form.Control type="text" placeholder="Enter # lights" />
