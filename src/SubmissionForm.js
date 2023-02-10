@@ -18,6 +18,10 @@ export default function SubmissionForm() {
 					<Form.Control as="textarea" />
 				</Form.Group>
 				<Form.Group className="mb-3" controlId="lights">
+					<Form.Label>Messier catalogue #</Form.Label>
+					<Form.Control type="text" placeholder="Enter messier catalogue # (e.g. 42 for M42)" />
+				</Form.Group>
+				<Form.Group className="mb-3" controlId="lights">
 					<Form.Label># Lights</Form.Label>
 					<Form.Control type="text" placeholder="Enter # lights" />
 				</Form.Group>
@@ -67,7 +71,7 @@ export default function SubmissionForm() {
 						<option value="sony">Sony</option>
 					</Form.Select>
 				</Form.Group>
-				<Button variant="primary" type="submit">
+				<Button className="mb-3" variant="primary" type="submit">
 					Submit
 				</Button>
 			</Form>
